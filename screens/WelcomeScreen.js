@@ -24,7 +24,12 @@ function WelcomeScreen() {
   return (
     <View style={styles.rootContainer}>
       <Text style={styles.title}>Welcome!</Text>
-      <Text style={styles.normaltxt}>You authenticated successfully!</Text>
+      <View style={styles.overview}>
+         <Text style={styles.normaltxt}>You authenticated successfully!</Text>
+         <Text style={styles.rocket}>🚀</Text>
+      </View>
+     
+      
       <Text>{fetchedMessage}</Text>
     </View>
   );
@@ -44,7 +49,16 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 8,
   },
+  overview:{
+    flexDirection: 'row',
+
+  },
   normaltxt: {
     fontSize: 18,
+  },
+  rocket: {
+    marginTop:-10,
+    fontSize: 34,
+    marginHorizontal:5
   }
 });
