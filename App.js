@@ -10,7 +10,7 @@ import SignupScreen from './screens/SignupScreen';
 import WelcomeScreen from './screens/WelcomeScreen';
 import { Colors } from './constants/styles';
 import AuthContextProvider, { AuthContext } from './store/auth-context';
-import IconButton from './components/ui/IconButton';
+import IconButton from './components/ui/IconButton'; 
 
 const Stack = createNativeStackNavigator();
 
